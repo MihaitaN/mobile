@@ -6,6 +6,7 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+	<script type="text/javascript" src="jquery/jquery.vibrate.min.js"></script>
 </head>
 <body>
 
@@ -13,7 +14,10 @@
 		<div data-role="header">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#" class="ui-btn-active ui-icon-home ui-btn-icon-left ui-corner-all">First page</a></li>
+					<li><a href="#" id="vib" class="ui-btn-active ui-icon-home ui-btn-icon-left ui-corner-all">First page</a></li>
+					<script>
+						$("#vib.button").vibrate();
+					</script>
 					<li><a href="#load" data-rel="dialog" data-transition="slidedown" class="ui-icon-info ui-btn-icon-right ui-btn-b ui-corner-all">Second page</a></li>
 				</ul>
 			</div>
