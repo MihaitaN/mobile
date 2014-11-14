@@ -11,7 +11,12 @@
 
 	<div data-role="page">
 		<div data-role="header">
-			<h2>This a most beautifull header ever</h2>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active">First page</a></li>
+					<li><a href="#load" data-rel="dialog" data-transition="slidedown">Second page</a></li>
+				</ul>
+			</div>
 		</div>
 
 		<div data-role="main" class="ui-content">
@@ -20,6 +25,15 @@
 
 		<div data-role="footer">
 			<h2>This is the footer of the application</h2>
+		</div>
+	</div>
+
+	<div data-role="page" id="load">
+		<div data-role="header">
+			<h2>Hello human!</h2>
+		</div>
+		<div data-role="main" class="ui-content">
+			<p>Please don't freak out! Its me your phone what is wrong with you human! We need to talk ;)</p>
 		</div>
 	</div>
 
